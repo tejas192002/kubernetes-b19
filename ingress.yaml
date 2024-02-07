@@ -5,7 +5,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: httpd
+  ingressClassName: nginx
   defaultBackend:
     service:
       name: home-svc 
