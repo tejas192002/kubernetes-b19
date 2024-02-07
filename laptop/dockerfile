@@ -1,4 +1,11 @@
-FROM nginx
-RUN mkdir -p /usr/share/nginx/html/laptop
-RUN echo "hello laptop" usr/share/nginx/html/laptop/index.html
-CMD [ "nginx","-DFOREGROUND" ]
+# Use the official httpd image as base
+FROM httpd:latest
+
+# Create a laptop directory
+RUN mkdir -p /usr/local/apache2/htdocs/laptop
+
+# Copy custom HTML file to serve in the laptop directory
+RUN echo "hello laptop" > /usr/local/apache2/htdocs/laptop/index.html
+
+# Start Apache HTTP Server
+CMD ["httpd", "-D", "FOREGROUND"]
