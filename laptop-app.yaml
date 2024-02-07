@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: laptop-c
-          image: nginx
+          image: tejaspatil19/laptop:latest
           ports:
             - containerPort: 80
   replicas: 2
