@@ -1,4 +1,4 @@
 FROM httpd
 RUN mkdir -p /var/www/html/home
-RUN echo "hello home" > /var/www/html/home/index.html
+COPY index.html /var/www/html/home/
 CMD [ "httpd", "-DFOREGROUND" ]
