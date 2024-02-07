@@ -1,0 +1,4 @@
+FROM nginx
+RUN mkdir /usr/share/nginx/html/laptop
+RUN echo "hello laptop" usr/share/nginx/html/laptop/index.html
+CMD [ "nginx","-DFOREGROUND" ]
