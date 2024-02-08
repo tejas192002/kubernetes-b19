@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-credst
+data:
+  DB_PASSWORD: "tej1234"
+  DB_USER: "LINUX"
+  DB_HOST: "554.554.0.58"
+  DB_NAME: "STUDENTAPP"
