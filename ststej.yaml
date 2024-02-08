@@ -15,7 +15,7 @@ spec:
           image: mysql
           ports:
             - containerPort: 3306
-            env:
+              env:
               - name: MYSQL_ROOT_PASSWORD
                 valueFrom:
                   configMapKeyRef:
