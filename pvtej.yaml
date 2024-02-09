@@ -16,4 +16,4 @@ spec:
     required:
       nodeSelectorTerms:
       - matchExpressions:
-       - { key: kubernetes.io/hostname, operator: In, values: [ip-172-31-1-241.eu-central-1.compute.internal]}
+        - {key: kubernetes.io/hostname, operator: In, values: [ip-172-31-1-241.eu-central-1.compute.internal]}
