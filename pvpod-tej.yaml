@@ -6,7 +6,7 @@ spec:
   containers:
     - name: my-contaier
       image: httpd
-      port:
+      ports:
         containerPort: 80
       volumeMounts:
         - mountPath: /mnt
