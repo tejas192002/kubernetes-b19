@@ -1,11 +1,8 @@
-# Use the official Nginx image as base
+
 FROM nginx:latest
 
-# Create a home directory
 RUN mkdir -p /usr/share/nginx/html/home
 
-# Copy custom HTML file to serve in the home directory
 RUN echo "Hello Home" > /usr/share/nginx/html/home/index.html
 
-# Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
