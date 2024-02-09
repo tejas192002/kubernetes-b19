@@ -6,7 +6,7 @@ spec:
   storageClassName: ""
   capacity:
     storage: 2Gi
-  volumrMode: Filesystem
+  volumeMode: Filesystem
   accessModes:
    - ReadWriteOnce
   persistentVolumeReclaimPolicy: Recycle
