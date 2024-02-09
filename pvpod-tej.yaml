@@ -1,17 +1,18 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-pv-pod
+  name: my-pod
 spec:
   containers:
-    - name: my-contaier
+    - name: my-nov
       image: httpd
       ports:
-        containerPort: 80
+        - containerPort: 80
       volumeMounts:
         - mountPath: /mnt
           name: new-vol
   volumes:
     - name: new-vol
-      presistantVolumeClaim:
+      persistentVolumeClaim:
         claimName: my-pvct
+      
