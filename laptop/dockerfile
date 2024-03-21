@@ -6,3 +6,4 @@ RUN mkdir -p /usr/local/apache2/htdocs/laptop
 RUN echo "hello laptop" > /usr/local/apache2/htdocs/laptop/index.html
 
 CMD ["httpd", "-D", "FOREGROUND"]
+
